@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+</head>
+
+<body>
+    <div class="search-wrap">
+        <p class="search-title">CARI FILM</p>
+        <form onsubmit="return false">
+            <div class="search">
+                <input type="text" class="searchTerm" name="quert" placeholder="Harry Potter">
+                <button type="submit" class="searchButton" onclick="cariFilm();">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="divider"> </div>
+    <div class="result-view">
+        <div>
+            <movie-result id="elem" />
+        </div>
+        <div>
+            <pagination-view id="elemPage" />
+        </div>
+    </div>
+    <div class="loading-view">
+        <div style="text-align: center">
+            <p>Mencari Film...</p>
+        </div>
+    </div>
+</body>
+
+</html>
